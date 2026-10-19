@@ -1,0 +1,28 @@
+Week 1, Day 2 | 19 Oct 2026
+Goal: Use IF logic to label and flag orders so problems stand out.
+
+What I did
+
+* Turned the sales data into an Excel Table and fixed its range so the totals and empty columns sat outside it
+* Rebuilt Margin with IF so the 4 orders with no revenue show blank instead of #DIV/0!
+* Built a Margin Flag column with a nested IF (Check, Low, OK)
+* Built an Order Size column with IFS (Check, Large, Medium, Small)
+* Used COUNTIF and SUMIF to count orders and total revenue for each band
+
+Key results
+
+* 11 orders have a margin under 20%, all Game Consoles at about 16%
+* Large orders are 20% of orders but bring 66% of revenue
+* Small orders are 54% of orders but only 10% of revenue
+
+What I learned
+
+* A blank ("") is text and Excel ranks text above numbers, so check for blanks first
+* IFS stops at the first true test, so the order of the tests matters
+* [@Col] means this row, Table1[Col] means the whole column and #Headers means the header cell only
+* Use $ to lock a total cell before dragging a formula down
+* A low-margin product like a console can still be worth selling if it drives high-margin add-ons
+
+Next
+Day 3: AND/OR flags (Review and Bulk columns), then the Day 3 plan
+  
